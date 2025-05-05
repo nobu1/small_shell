@@ -37,7 +37,7 @@ Clone the repository and build:
 ```
 git clone https://github.com/nobu1/small_shell.git  
 cd small_shell  
-make  
+gcc -o small_shell small_shell.c 
 ```
 
 ### Run
@@ -49,8 +49,6 @@ small_shell$ ls -l
 small_shell$ echo "Hello, World!"  
 small_shell$ cd /tmp  
 small_shell$ pwd  
-small_shell$ export MYVAR=123  
-small_shell$ echo $MYVAR  
 small_shell$ cat file.txt | grep pattern > result.txt  
 small_shell$ exit  
 ```
@@ -58,8 +56,6 @@ small_shell$ exit
 ## Project Structure
 
 - `small_shell.c` – Main shell implementation
-- `Makefile` – Build instructions
-- Other source files as needed
 
 ## Author
 
